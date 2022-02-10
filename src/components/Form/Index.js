@@ -7,7 +7,8 @@ import {
     Vibration,
     Pressable,
     Keyboard,
-    FlatList
+    FlatList,
+    SafeAreaView
 } from "react-native"
 import ResultImc from "../ResultImc";
 import styles from "./style";
@@ -66,6 +67,7 @@ export default function Form(props) {
     );
 
     return (
+        <SafeAreaView style={styles.container}>
         <View style={styles.formContext}>
             {imc == null ?
                 <Pressable onPress={Keyboard.dismiss} style={styles.form}>
@@ -121,5 +123,6 @@ export default function Form(props) {
                 }}
             />
         </View>
+        </SafeAreaView>
     );
 }
