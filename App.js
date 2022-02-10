@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Title from './src/components/Title';
 import Form from './src/components/Form/Index';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    
+    <SafeAreaView style={styles.container}>
       <Title/>
       <Form/>
-    </View>
+      
+    </SafeAreaView>
   );
 }
 
