@@ -12,8 +12,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator 
-      
-      
       screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
@@ -43,7 +41,15 @@ export default function App() {
           }
           
         }}/>
-        <Tab.Screen name="BodyFat" component={BodyFat}/>
+        <Tab.Screen 
+        name="BodyFat" 
+        component={BodyFat}
+        options={{
+          headerStyle:{
+              height:0
+          }
+          
+        }}/>
       </Tab.Navigator>
     </NavigationContainer>
     

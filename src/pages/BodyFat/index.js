@@ -1,12 +1,21 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import FormBf from '../../components/FormBf/index'
+import { SafeAreaView, StyleSheet, View, Text, StatusBar } from 'react-native'
 
-
-
-export default function Imc(){
+export default function BodyFat(){
     return(
-        <View>
-            <Text>a</Text>
-        </View>
+        <SafeAreaView style={styles.container}>
+            <FormBf></FormBf>
+        </SafeAreaView>
     )
 }
+
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#e0e5e5',
+    },
+  });
+
+  
